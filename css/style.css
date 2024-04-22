@@ -10,7 +10,7 @@
 .container {
     direction: rtl;
     display: grid;
-    grid-template-columns: 648px 648px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
 }
 
 .right_container {
@@ -35,6 +35,7 @@
     height: auto;
     max-width: 100%;
 }
+
 .icon_web-border{
     --tw-border-opacity: 1;
     border-width: 1px;
@@ -51,7 +52,16 @@
     align-items: center;
 }
 .icon_web-image {
+    display: grid;
+    justify-items: end;
+    cursor: pointer;
+}
 
+.icon_web-imagelan {
+    width: 18px;
+    height: 18px;
+    display: block;
+    vertical-align: middle;
 }
 .main-login_.form {
 
